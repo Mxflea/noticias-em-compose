@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.*
 import androidx.compose.ui.Modifier
 import com.example.noticias.FormScreen
+import com.example.noticias.ListScreen
 import com.example.noticias.presentation.theme.NoticiasTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    FormScreen()
+                    ListScreen()
                 }
             }
         }
