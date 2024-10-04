@@ -18,17 +18,17 @@ import com.example.noticias.data.model.News
 @Composable
 fun ListScreen() {
 
-    val newsList = List(500) {
+    val newsList = List(500) { inteiro ->
 
         News(
-            title = "Titulo ${it}",
-            description = "Descricao ${it}",
-            message = "Mensagem ${it}",
+            title = "Titulo ${inteiro}",
+            description = "Descricao ${inteiro}",
+            message = "Mensagem ${inteiro}",
             isFavorite = false
         )
     }
 
-    LazyColumn() {
+    LazyColumn(contentPadding = PaddingValues(16.dp)) {
         items(count = newsList.size){
             Column(modifier = Modifier
                     .fillMaxWidth()
